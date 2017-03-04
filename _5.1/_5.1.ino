@@ -30,10 +30,13 @@ void setup()                  // CONDICIONS INICIALS
 void loop()                  // BUCLE
 {
   while (Serial.available() > 0) {  // if there's any serial available, read it
+    
     r1 = Serial.parseInt();// look for valid int the incoming serial stream
-Serial.print ("El valor de r1 es: ");
-Serial.println ( r1) ;
- Serial.print ("El valor de r2 es: ");   
+    
+    Serial.print ("El valor de r1 es: ");
+    Serial.println ( r1) ;
+    Serial.print ("El valor de r2 es: ");
+       
     r2 = Serial.parseInt();
    
     Serial.println ( r2) ;
